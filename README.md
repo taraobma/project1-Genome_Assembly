@@ -5,13 +5,11 @@ This project implements a reproducible Nextflow pipeline for bacterial genome as
 The workflow integrates assembly, polishing, completeness analysis, and reference-based evaluation in a modular HPC-ready framework.
 
 
----
 ## Workflow Overview
 Long reads (Nanopore) → Assembly (Flye) → Polishing (Pilon) → Annotation (Prokka) → Quality Assessment (QUAST, BUSCO).  
 Short reads (Illumina) are used for alignment-based polishing.  
 The pipeline is implemented in Nextflow with modular processes for each tool.
 
----
 
 ## Key Results
 ### Assembly Quality (QUAST – Polished)
@@ -38,7 +36,6 @@ Indicates a highly complete and structurally accurate assembly.
 #### BUSCO Completeness Plot
 ![BUSCO Completeness Plot](./figures/buscoplot.png)
 
----
 
 ## Tools Used
 - Nextflow
@@ -51,14 +48,12 @@ Indicates a highly complete and structurally accurate assembly.
 - BUSCO
 - Python (pycirclize, matplotlib)
 
----
 ## Takeaway
 This project demonstrates:
 - End-to-end genome assembly workflow design
 - Assembly polishing and evaluation
 - Interpretation of structural and completeness metrics
 - Reproducible pipeline development using Nextflow
----
 
 ## References
 
