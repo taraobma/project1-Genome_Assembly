@@ -5,8 +5,6 @@ include {BOWTIE2_INDEX} from './modules/bowtie2_index'
 include {BOWTIE2_ALIGN} from './modules/bowtie2_align'
 include {SAMTOOLS_SORT} from './modules/samtools'
 include {PILON} from './modules/pilon'
-
-// These are this week's modules
 include {BUSCO} from './modules/busco'
 include {NCBI_DATASETS} from './modules/ncbi_datasets_cli'
 include {QUAST} from './modules/quast'
@@ -15,8 +13,6 @@ include {PROKKA} from './modules/prokka'
 include {BUSCO_PLOT} from './modules/busco_plot'
 
 workflow {
-
-
     // Look in the nextflow.config file to see values for params
     // This makes a "channel" with the files and info we need to run our pipeline
 
@@ -41,7 +37,6 @@ workflow {
     // Pass the filtered reads to the assembly tool
     FLYE(FILTLONGER.out)
 
-    // Week 2
     
     //Align Short Reads For Polishing
 
