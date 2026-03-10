@@ -4,4 +4,4 @@ samples/
 refs/
 .vscode/
 .nextflow*
-.gz
+.gz.DS_Store
